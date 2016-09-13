@@ -45,41 +45,115 @@
             <li>Средства для ухода</li>
           </ul>
         </div>
-        <section class="filters">
-          <div class="filters-producers">
-            <p>Производители:</p>
-            <ul>
-              <li>Baxter of California</li>
-              <li>Mr Natty</li>
-              <li>Suavecito</li>
-              <li>Malin+Goetz</li>
-              <li>Murray's</li>
-              <li>American Crew</li>
-            </ul>
-          </div>
-          <div class="filters-group-items">
-            <ul>
-              <li>Бритвенные принадлежности</li>
-              <li>Средства для ухода</li>
-              <li>Аксессуары</li>
-            </ul>
-          </div>
-          <button class="btn" type="submit">Показать</button>
+        <section class="filter">
+          <form action="/echo" method="post" id="filters">
+            <fieldset class="filter-developers">
+              <legend>Производители</legend>
+              <div class="filter-developers-chb">
+                <input id="baxter" name="baxter" type="checkbox" checked>
+                <label for="baxter">Baxter of California</label>
+                <input id="natty" name="natty" type="checkbox">
+                <label for="nutty">Mr Natty</label>
+                <input id="suavecito" name="suavecito" type="checkbox" checked>
+                <label for="suavecito">Suavecito</label>
+                <input id="malin_goetz" name="malin_goetz" type="checkbox">
+                <label for="malin_goetz">Malin+Goetz</label>
+                <input id="murray's" name="murray's" type="checkbox">
+                <label for="murray's">Murray's</label>
+                <input id="american_crew" name="american_crew" type="checkbox" checked>
+                <label for="american_crew">American Crew</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-group_items">
+              <legend>Группы товаров:</legend>
+              <div class="filter-group_items-rb">
+                <input id="sh_accesories" name="group_items" type="radio"
+                        value="shaving_accesories" form="filters">
+                <label for="ch_accesories">Бритвенные принадлежности</label>
+                <input id="cream" name="group_items" type="radio"
+                        value="cream" form="filters" checked>
+                <label for="cream">Средства для ухода</label>
+                <input id="accesories" name="group_items" type="radio"
+                        value="accesories" form="filters">
+                <label for="cream">Аксессуары</label>
+              </div>
+            </fielset>
+          </form>
         </section>
-        <div class="shop-gallery">
-          <figure class="shop-gallery-items">
-            <img src="#" width="150" height="150" alt="">
-            <img src="#" width="150" height="150" alt="">
-            <img src="#" width="150" height="150" alt="">
-            <img src="#" width="150" height="150" alt="">
-            <img src="#" width="150" height="150" alt="">
-            <img src="#" width="150" height="150" alt="">
+          <figure class="shop-gallery">
+            <div class="shop-gallery-items">
+              <a href="#">
+                <img src="#" width="150" height="150" alt="">
+                <span>Набор для путешествий</span><br>
+                <span>"Baxter of California"</span>
+              <a/>
+              <div class="items-price">
+                <span>2 900 руб</span>
+                <a class="buy" href="#">Купить</a>
+              </div>
+            </div>
+            <div class="shop-gallery-items">
+              <a href="#">
+                <img src="#" width="150" height="150" alt="">
+                <span>Увлажняющий кондиционер</span><br>
+                <span>"Baxter of California"</span>
+              <a/>
+              <div class="items-price">
+                <span>750 руб</span>
+                <a class="buy" href="#">Купить</a>
+              </div>
+            </div>
+            <div class="shop-gallery-items">
+              <a href="#">
+                <img src="#" width="150" height="150" alt="">
+                <span>Гель для волос</span><br>
+                <span>"Suavecito"</span>
+              <a/>
+              <div class="items-price">
+                <span>290 руб</span>
+                <a class="buy" href="#">Купить</a>
+              </div>
+            </div>
+            <div class="shop-gallery-items">
+              <a href="#">
+                <img src="#" width="150" height="150" alt="">
+                <span>Глина для укладки волос</span><br>
+                <span>"American Crew"</span>
+              <a/>
+              <div class="items-price">
+                <span>500 руб</span>
+                <a class="buy" href="#">Купить</a>
+              </div>
+            </div>
+            <div class="shop-gallery-items">
+              <a href="#">
+                <img src="#" width="150" height="150" alt="">
+                <span>Гель для волос</span><br>
+                <span>"American Crew"</span>
+              <a/>
+              <div class="items-price">
+                <span>300 руб</span>
+                <a class="buy" href="#">Купить</a>
+              </div>
+            </div>
+            <div class="shop-gallery-items">
+              <a href="#">
+                <img src="#" width="150" height="150" alt="">
+                <span>Набор для бритья </span><br>
+                <span>"Baxter of California"</span>
+              <a/>
+              <div class="items-price">
+                <span>3 900 руб</span>
+                <a class="buy" href="#">Купить</a>
+              </div>
+            </div>
           </figure>
+          <div class="page_number">
           <a href="#" class="number-btn">1</a>
           <a href="#" class="number-btn">2</a>
           <a href="#" class="number-btn">3</a>
           <a href="#" class="number-btn">4</a>
-      </div>
+          </div>
     </main>
     <footer class="main-footer">
       <div class="conteiner">
