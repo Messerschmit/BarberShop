@@ -6,10 +6,24 @@ html, body{
 }
 
 body{
-  background-color: #000000;
-  background-image: url("../images/bg_main.jpg");
-  background-image: no-repeat;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
   background-size: auto 1750;
+}
+
+.index-body{
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: auto 1750;
+}
+.body-price{
+  background-color: #000000;
+  background-image: url("barbershop-price.jpg");
+  background-repeat: no-repeat;
+  background-size:1200px auto;
+  background-position:top;
 }
 .clearfix{
   content: "";
@@ -17,6 +31,8 @@ body{
   clear: both;
 }
 .main-header{
+  width: 1200px;
+  margin: 0 auto;
   margin-bottom: 56px;
   border: 1px solid green;
 }
@@ -28,16 +44,29 @@ body{
   border: 1px solid yellow;
 }
 
+.nav-logo{
+  float: left;
+  width: 140px;
+  border: 1px solid green;
+  margin-right: 20px;
+
+  min-height: 70px;
+}
+
 .main-menu{
   float: left;
-  width: 780px;
+  width: 620px;
   border: 1px solid green;
+
+  min-height: 70px;
 }
 
 .user-block{
   float: right;
   width: 140px;
   border: 1px solid green;
+
+  min-height: 70px;
 }
 .index-logo{
   height: 204px;
@@ -46,6 +75,8 @@ body{
   margin-left: auto;
   margin-bottom: 25px;
   border: 1px solid green;
+
+  min-height: 70px;
 }
 
 .features{
