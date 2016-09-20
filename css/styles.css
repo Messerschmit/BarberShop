@@ -31,6 +31,15 @@ body{
   background-position:top;
 }
 
+.body-item{
+  background-color: #000000;
+  background-image: url("barbershop-item.jpg");
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position:top;
+
+}
+
 .main-header{
   width: 1200px;
   margin: 0 auto;
@@ -130,7 +139,7 @@ body{
 }
 
 .title-page{
-  width: 140px;
+  width: 620px;
   margin-bottom: 24px;
 
   /*для разметки. Удалить потом*/
@@ -139,8 +148,17 @@ body{
 }
 
 .bread-crumbs{
-  width: 630px;
+  width: 880px;
   margin-bottom: 160px;
+
+  /*для разметки. Удалить потом*/
+  border: 1px solid red;
+  min-height: 14px;
+}
+
+.bread-crumbs-item{
+  width: 880px;
+  margin-bottom: 55px;
 
   /*для разметки. Удалить потом*/
   border: 1px solid red;
@@ -188,8 +206,67 @@ body{
   min-height: 145px;
 }
 
+.item-gallery{
+  float: left;
+  width: 460px;
+  /*для разметки. Удалить потом*/
+  border: 1px solid red;
+  min-height: 670px;
+}
+
+.item-gallery-content{
+  width: 460px;
+  margin: 0;
+  margin-bottom: 20px;
+  /*для разметки. Удалить потом*/
+  border: 1px solid blue;
+  min-height: 500px;
+}
+
+.item-gallery-preview{
+  width: 460px;
+  margin: 0px;
+  /*для разметки. Удалить потом*/
+  border: 1px solid blue;
+  min-height: 150px;
+
+}
+
+.preview{
+  float: left;
+  width: 140px;
+  margin-right: 20px;
+
+  /*для разметки. Удалить потом
+  border: 1px solid orange;
+  min-height: 150px;*/
+}
+
+.preview:last-child{
+  float:right;
+  margin-right: 0;
+}
+
+.item-description{
+  float: right;
+  width:380px;
+  margin-right: 10px;
+
+  /*для разметки. Удалить потом*/
+  border: 1px solid blue;
+  min-height: 535px;
+}
+
 .main-footer{
   margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+    /*для разметки. Удалить потом*/
+  border: 1px solid red;
+}
+
+.item-footer{
+  margin-top: 50px;
   padding-top: 60px;
   padding-bottom: 40px;
     /*для разметки. Удалить потом*/
@@ -202,7 +279,7 @@ body{
   margin-right: 60px;
     /*для разметки. Удалить потом*/
   border: 1px solid green;
-  min-height: 190px;
+  min-height: 100px;
 }
 .footer-social{
   float: left;
@@ -210,7 +287,7 @@ body{
   min-height: 90px;
     /*для разметки. Удалить потом*/
   border: 1px solid green;
-    min-height: 190px;
+    min-height: 85px;
 }
 .footer-copyright{
   float: right;
@@ -218,5 +295,5 @@ body{
   min-height: 90px;
     /*для разметки. Удалить потом*/
   border: 1px solid green;
-    min-height: 190px;
+    min-height: 80px;
 }
