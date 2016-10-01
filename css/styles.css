@@ -32,8 +32,8 @@ body{
 }
 
 .body-item{
-  background-color: #000000;
-  background-image: url("barbershop-item.jpg");
+  background-color: #ffffff;
+  background-image: url("");
   background-repeat: no-repeat;
   background-size:auto;
   background-position:top;
@@ -256,7 +256,6 @@ body{
   border: 1px solid blue;
   min-height: 535px;
 }
-
 .main-footer{
   margin-top: 65px;
   padding-top: 60px;
@@ -265,12 +264,14 @@ body{
   border: 1px solid red;
 }
 
-.item-footer{
-  margin-top: 50px;
-  padding-top: 60px;
-  padding-bottom: 40px;
+.secondary-footer{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-top: 60px;
+	padding-bottom: 20px;
     /*для разметки. Удалить потом*/
-  border: 1px solid red;
+	border: 1px solid red;
 }
 .footer-contacts{
   float: left;
