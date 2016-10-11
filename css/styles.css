@@ -4,23 +4,24 @@ html, body{
 }
 
 body{
-  background-color: #ffffff;
-  background-image: url("");
+  min-width: 960px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family:'PT Sans Narrow',"Arial", sans-serif;
+  text-transform: uppercase;
+
+  background: #000000;
+  background-image: url("../img/index_bg.jpg");
   background-repeat: no-repeat;
-  background-size: auto 1750;
+  background-position: center top;
 }
 
 .clearfix{
   content: "";
   display: table;
   clear: both;
-}
-
-.body-index{
-  background-color: #ffffff;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: auto 1750;
 }
 
 .body-price{
@@ -41,60 +42,108 @@ body{
 }
 
 .main-header{
-  width: 1200px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 
-    /*для разметки. Удалить потом*/
-  border: 1px solid green;
+  background: #000000;
+
+  color: #ffffff;
 }
+
+
 
 .container{
   width:940px;
   margin:0 auto;
   padding: 0 10px;
-
-    /*для разметки. Удалить потом*/
-  border: 1px solid yellow;
+  border: 1px solid green;
 }
 
 .nav-logo{
   float: left;
   width: 140px;
   margin-right: 20px;
-
-  /*для разметки. Удалить потом*/
-  border: 1px solid green;
-  min-height: 70px;
 }
 
 .main-menu{
   float: left;
   width: 620px;
+}
 
-  /*для разметки. Удалить потом*/
-  border: 1px solid green;
-  min-height: 70px;
+.main-menu ul{
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+.main-menu li{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-menu a{
+  display: block;
+  padding: 25px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-menu a:hover{
+  background-color: #242424;
 }
 
 .user-block{
   float: right;
-  width: 140px;
-
-  /*для разметки. Удалить потом*/
-  border: 1px solid green;
-  min-height: 70px;
+  max-width: 140px;
 }
+
+.login{
+    position: relative;
+    display: inline-block;
+    padding: 25px 20px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: top;
+  }
+
+  .login::before{
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+
+    width: 18px;
+    height: 18px;
+
+    background: transparent url("../img/icon-login.png") no-repeat;
+    opacity: 0.3;
+  }
+
+.login:hover{
+  background-color: #242424;
+}
+
+.login:hover::before{
+    opacity: 1;
+}
+
 .index-logo{
   height: 204px;
   width: 368px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 25px;
+}
 
-  /*для разметки. Удалить потом*/
-  border: 1px solid green;
-  min-height: 70px;
+.index-logo img{
+  width: 368px;
+  height: 204px;
 }
 
 .features{
@@ -106,9 +155,43 @@ body{
   width: 300px;
   margin: 0;
   margin-right: 20px;
+  text-align: center;
+}
 
-  /*для разметки. Удалить потом*/
-  min-height: 175px;
+.feature-name{
+  position: relative;
+  display: block;
+  font-size: 30px;
+  line-height: 42px;
+
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+}
+
+.feature-name::after{
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  margin-left: -10px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+
+  transform: rotate(45deg);
+}
+
+.features-item p{
+  font-size: 14px;
+  line-height: 24px;
+  margin: 10px;
+  margin-bottom: 0;
+
 }
 
 .features-item:last-child{
@@ -120,12 +203,15 @@ body{
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 35px;
+  border: 1px solid blue;
 }
 .index-content-left{
   float: left;
   min-height: 330px;
   width: 380px;
   margin-left: 80px;
+
+  border: 1px solid red;
 }
 
 .index-content-right{
@@ -133,6 +219,7 @@ body{
   min-height: 330px;
   width: 300px;
   margin-right: 80px;
+  border: 1px solid red;
 }
 .index-content:last-child{
   margin-bottom: 0;
